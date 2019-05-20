@@ -1,0 +1,42 @@
+div.head-menu.header__menu
+    div.container.head-menu__container
+
+        div.head-menu__logo-and-social
+
+            div.head-menu__logo_block
+                a.head-menu__logo_link(href='/')
+                    img.head-menu__logo_img(src='img/logo@1X.png', srcset='img/logo@2X.png 2x, img/logo@3X.png 3x')
+
+            div.head-menu__social_block
+                ul.head-menu__social_ul
+                    li.head-menu__social_item
+                        a.head-menu__social_item-link(href='/')
+                            i.fab.fa-facebook-f
+                    li.head-menu__social_item
+                        a.head-menu__social_item-link(href='/')
+                            i.fab.fa-telegram-plane
+                    li.head-menu__social_item
+                        a.head-menu__social_item-link(href='/')
+                            i.fab.fa-twitter
+
+        div.head-menu__nav-and-language
+
+            nav.head-menu__nav_block
+                ul.head-menu__nav_ul
+                    li.head-menu__nav_item
+                        a(href='#about').head-menu__nav_link
+                            | About
+                    li.head-menu__nav_item
+                        a(href='#overview').head-menu__nav_link
+                            | Overview
+                    li.head-menu__nav_item
+                        a(href='#news').head-menu__nav_link
+                            | News
+                    li.head-menu__nav_item
+                        a(href='#events').head-menu__nav_link
+                            | Events
+                    li.head-menu__nav_item
+                        a(href='#contacts').head-menu__nav_link
+                            | Contacts
+
+            include switch-language.pug

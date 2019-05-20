@@ -1,0 +1,175 @@
+.header
+  height: 100vh
+  width: 100vw
+  background: $color-black
+  position: relative
+  &__back-bg, &__particles-bg, &__front-bg
+    position: absolute
+    width: 100vw
+    height: 100vh
+  &__back-bg
+    z-index: 1
+    background-image: url(../img/background-back.png)
+    background-position: 50% 50%
+    background-size: cover
+    opacity: 0.7
+    filter: brightness(73%)
+    filter: grayscale(80%)
+  &__particles-bg
+    z-index: 2
+    opacity: 0.8
+  &__front-bg
+    z-index: 3
+    background-image: url(../img/background-front.png)
+    background-position: 50% 50%
+    background-size: cover
+    filter: brightness(43%)
+    opacity: 1
+  &__content
+    z-index: 8
+    position: relative
+  // Content
+  &__content
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 100vh
+  &__content-info
+    margin-top: 70px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  // Timer
+  &__content-timer
+    font-family: 'CoreSansG', sans-serif
+    color: $color-white
+    font-size: 41px
+    display: flex
+    justify-content: center
+    letter-spacing: 3px
+  // HEADER LOGO
+  &__content-logo_wr
+    position: relative
+  &__content-logo
+    position: relative
+    //animation: flicker 3s infinite
+    //animation: text-flicker 3s infinite
+  &__content-logo-front
+    position: absolute
+    left: 0
+    top: 0
+    //animation: text-flicker 3s
+    //animation-fill-mode: forwards
+    //animation-iteration-count: 1
+  // Title
+  &__title
+    color: $color-white
+    text-transform: uppercase
+    letter-spacing: 3px
+  // Desc
+  &__desc_text
+    font-family: 'MoniqueScript', sans-serif
+    color: $color-pink
+    font-size: 45px
+    margin-top: 10px
+  // Btns
+  &__content-btns
+    display: flex
+    justify-content: space-between
+    width: 757px
+    margin-bottom: 54px
+  &__btn
+    display: block
+    width: 200px
+    padding: 16px 0
+    line-height: 16px
+    text-align: center
+    color: $color-white
+    background: $color-black
+    position: relative
+    transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out
+    &:hover, &:active, &:focus
+      text-decoration: none
+      color: $color-white
+      box-shadow: 0px 5px 6.65px 0.35px rgba(243, 59, 71, 0.4)
+      background-color: $color-pink
+    &_get-started
+      .header__arrow__icon
+        animation: get-started-bounce 1s infinite
+      &:hover
+        .header__arrow__icon
+          animation: get-started-bounce 1s infinite
+  &__white-list__icon
+    width: 14px
+    height: 15px
+    position: absolute
+    left: 20px
+  &__whatch-video__icon
+    left: 20px
+    width: 5px
+    height: 6px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+  &__arrow__icon
+    right: 20px
+    width: 15px
+    height: 8px
+    top: 20px
+    //transform: translateY(-50%)
+    position: absolute
+
+@keyframes flicker
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100%
+    opacity: 0.99
+    //text-shadow: -1px -1px 0 rgba(#fff, 0.4), 1px -1px 0 rgba(#fff, 0.4),
+    //-1px 1px 0 rgba(#fff, 0.4), 1px 1px 0 rgba(#fff, 0.4), 0 -2px 8px, 0 0 2px,
+    //	0 0 5px #ff7e00, 0 0 15px #ff4444, 0 0 2px #ff7e00, 0 2px 3px #000;
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999%
+    opacity: 0.4
+    //text-shadow: none;
+
+@keyframes text-flicker
+  0%
+    opacity: 0
+  8%
+    opacity: 0.3
+  20%
+    opacity: 1
+  25%
+    opacity: 0.3
+  30%
+    opacity: 1
+  70%
+    opacity: 0.7
+  72%
+    opacity: 0.5
+  77%
+    opacity: .9
+  100%
+    opacity: .9
+
+@keyframes get-started-bounce
+  0%, 100%, 20%, 50%, 80%
+    transform: translateX(0)
+    //transform: translateY(-50%)
+  40%
+    transform: translateX(-15px)
+    //transform: translateY(-50%)
+  60%
+    transform: translateX(-7px)
+    //transform: translateY(-50%)

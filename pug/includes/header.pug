@@ -1,0 +1,38 @@
+header.header.panel
+    div.header__back-bg
+    div.header__particles-bg#particles-js-star
+    div.header__particles-bg#particles-js
+    div.header__front-bg
+    // include menu.pug
+    div.header__content
+        div.header__content-info
+            div.header__content-logo_wr
+                img.header__content-logo(src='img/header-logo@1X.png', srcset='img/header-logo@2X.png 2x, img/header-logo@3X.png 3x')
+                img.header__content-logo-front(src='img/header-logo2@1X.png', srcset='img/header-logo2@2X.png 2x, img/header-logo2@3X.png 3x')
+            div#timer.header__content-timer
+                div.header__content_timer_item_wr
+                    span#days.mainCabinet-dashboard__item 10
+                div.header__content_timer_double-dotted :
+                div.header__content_timer_item_wr
+                    span#hours.mainCabinet-dashboard__item 23
+                div.header__content_timer_double-dotted :
+                div.header__content_timer_item_wr
+                    span#minutes.mainCabinet-dashboard__item 59
+                div.header__content_timer_double-dotted :
+                div.header__content_timer_item_wr
+                    span#seconds.mainCabinet-dashboard__item 36
+
+            div.header__title
+                h1 The blockchain-based  platform
+
+            div.header__desc
+                p.header__desc_text
+                    | for world of fashion
+
+        div.header__content-btns
+            a.header__btn(href='/') Watch video
+                img.header__whatch-video__icon(src='img/icon-play.svg')
+            a.header__btn.header__btn_get-started(href='/') Get started
+                img.header__arrow__icon(src='img/icon-header-arrow.svg')
+            a.header__btn(href='/') White List
+                img.header__white-list__icon(src='img/icon-white-list.svg')

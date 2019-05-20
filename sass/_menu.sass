@@ -1,0 +1,75 @@
+.head-menu
+  z-index: 10
+  position: fixed
+  width: 100vw
+  transition: background-color .5s ease-in-out
+  height: 74px
+  top: 0
+  transform: translate3d(0,0,0)
+  // Blocks Menu
+  &__container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 30px 15px
+    transition: padding .5s ease-in-out
+
+  //  Logo And Social
+  &__logo-and-social
+    display: flex
+    align-items: center
+    margin-right: auto
+  &__social_block
+    margin-left: 114px
+  &__social_ul
+    padding: 0
+    margin: 0
+    list-style-type: none
+  &__social_item
+    display: inline-block
+    margin-left: 40px
+    width: 25px
+    height: 46px
+    overflow: hidden
+    &:first-child
+      margin-left: 0
+  &__social_item-link
+    color: $color-white
+    transition: color .3s ease, font-size .3s ease
+    display: block
+    width: 100%
+    height: 100%
+    line-height: 60px
+    &:hover
+      cursor: pointer
+      text-decoration: none
+      color: $color-pink
+      font-size: 25px
+  //  Active
+  &__active
+    background: $color-black
+    .head-menu__container
+      padding: 10px 15px
+
+  //  Nav And Language
+  &__nav-and-language
+    display: flex
+  &__nav_ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+  &__nav_item
+    display: inline-block
+    margin-left: 35px
+    &:first-child
+      margin-left: 0
+  &__nav_link
+    color: $color-white
+    font-size: 14px
+    transition: .3s ease
+    font-weight: 100
+    &:hover
+      color: $color-pink
+      text-decoration: none
+  &__swtch-lng_block
+    margin-left: 50px

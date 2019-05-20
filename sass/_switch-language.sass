@@ -1,0 +1,25 @@
+.swtch-lng
+  color: $color-white
+  position: relative
+  font-size: 14px
+  transition: color .3s ease
+  &__ul
+    display: none
+  &__title
+    position: relative
+    padding-top: 2px
+    font-weight: 100
+    &:after
+      font-family: "Font Awesome 5 Free"
+      font-weight: 900
+      content: "\f0dd"
+      margin-left: 9px
+      position: relative
+      color: $color-pink
+      transition: color .3s ease
+  &:hover
+    cursor: pointer
+    color: $color-pink
+    & .swtch-lng__title
+      &:after
+        color: $color-white

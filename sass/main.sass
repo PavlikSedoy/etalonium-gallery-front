@@ -1,0 +1,1257 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	width: 100vw
+	overflow-x: hidden
+	height: auto
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+h1, h2, h3, h4
+	font-family: 'BigCaslon', sans-serif
+
+//section
+//	overflow-y: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.btn_red
+	background-color: rgb(254, 75, 86)
+	box-shadow: 0px 5px 6.65px 0.35px rgba(243, 59, 71, 0.4)
+	width: 240px
+	display: block
+	padding: 16px 0
+	text-align: center
+	color: $color-white
+.section-title
+	font-size: 45px
+	margin: 0
+#particles-js-about1
+	position: absolute
+	left: 0
+	top: 150px
+	width: 200px
+	height: 300px
+#particles-js-about2
+	position: absolute
+	right: 223px
+	top: 85px
+	width: 200px
+	height: 300px
+#particles-js-about3
+	position: absolute
+	right: 40%
+	top: 485px
+	width: 200px
+	height: 300px
+
+.about
+	position: relative
+	background: $color-white
+	padding-top: 142px
+	padding-bottom: 84px
+	&__container
+		position: relative
+	&__etalonium
+		margin-top: 67px
+		max-width: 352px
+	&__big-letter
+		float: left
+		margin-right: 15px
+		margin-top: 7px
+	&__paragraph
+		font-size: 16px
+		color: $color-gray
+		font-weight: 100
+	&__paragraph_first-letter
+		color: $color-pink
+		font-weight: 600
+		letter-spacing: 3px
+	&__mission
+		width: 290px
+		height: 367px
+		background-image: url(../img/video-preview@1X.png)
+		background-size: cover
+		background-position: 50% 50%
+		display: table
+		margin-top: 30px
+	&__mission_text
+		display: table-cell
+		vertical-align: bottom
+		background: rgba( $color-black, .4 )
+		padding: 13px
+		font-size: 13px
+		color: $color-white
+		font-weight: 100
+		img
+			margin-top: 20px
+	&__etalonium-coin
+		margin-top: 55px
+		max-width: 355px
+		line-height: 26px
+	&__paragraph-coin
+		font-size: 18px
+	&__btn_red
+		margin-top: 40px
+		transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out
+		&:hover, &:active, &:focus
+			text-decoration: none
+			color: $color-white
+			background-color: $color-black
+			box-shadow: none
+	&__bottom-img
+		position: absolute
+		bottom: -190px
+		left: 15px
+	&__row
+		padding: 0
+.market-analys
+	background: $color-black
+	padding-bottom: 76px
+	&__container
+		position: relative
+	&__title
+		margin-top: 130px
+		color: $color-white
+		line-height: 45px
+		font-size: 33px
+		letter-spacing: 1px
+	&__swiper
+		margin-top: 63px
+		padding-top: 25px
+		margin-bottom: 100px
+	&__item_icon
+		//height: 0px
+		//overflow: hidden
+		opacity: 0
+		position: absolute
+		transform: translateY(-100%)
+		transition: transform .3s ease-in-out, opacity .3s ease-in-out
+		g
+			fill: $color-white
+	&__swiper_wr
+		margin-top: 10px
+	&__swiper_slide
+		padding: 33px 27px
+		transition: padding-top .3s ease-in-out
+		color: $color-white
+		min-height: 372px
+		overflow: hidden
+		font-family: 'CoreSansG', sans-serif
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 3px
+			background-image: linear-gradient( 130deg, rgb(255,0,0) 0%, rgb(252,0,101) 100%)
+			transition: height .3s ease-in-out
+			z-index: -1
+		&:hover
+			//padding-top: 44px
+			//transition-delay: .3s
+			padding-top: 124px
+			&:before
+				height: 100%
+				transition-delay: 0s
+			.market-analys__item_icon
+				//height: 90px
+				//transition-delay: .3s
+				opacity: 1
+				transform: translateY(-90px)
+	&__swiper_item_title
+		font-size: 22px
+	&__swiper_item_paragraph
+		font-size: 14px
+		margin-top: 30px
+	&__buttom-title_wr
+		position: relative
+		max-width: 279px
+		margin-top: 70px
+		&:before
+			content: url("../img/icon-arrow-bottom-pink.svg")
+			position: absolute
+			top: 135px
+			width: 11px
+			height: 44px
+			z-index: 8
+			left: 10px
+	&__buttom-title
+		font-size: 35px
+		color: $color-pink
+		line-height: 50px
+.platforms
+	position: relative
+	padding-bottom: 109px
+	&__container
+		position: relative
+	&__section-title
+		line-height: 45px
+		font-size: 33px
+		letter-spacing: 1px
+	&__item
+		position: absolute
+		border-radius: 50%
+		font-family: 'CoreSansG', sans-serif
+		font-style: italic
+		font-weight: 600
+		color: $color-white
+		letter-spacing: 1px
+		&:hover
+			cursor: pointer
+	&__item_bg_black
+		background: $color-black
+		transition: background-color .3s ease-in-out
+		&:hover, &:focus, &:active
+			background: $color-red
+	&__item_bg_red
+		background: $color-red
+	&__item_fashion-maker
+		width: 235px
+		height: 235px
+		top: 0
+		right: 229px
+		font-size: 28px
+	&__item_buyer
+		width: 267px
+		height: 267px
+		left: 0
+		top: 241px
+		font-size: 32px
+	&__item_agent
+		width: 149px
+		height: 149px
+		right: 0
+		top: 353px
+		font-size: 20px
+	&__item_model
+		width: 267px
+		height: 267px
+		left: 400px
+		top: 400px
+		font-size: 32px
+	&__item_miner
+		width: 149px
+		height: 149px
+		top: 658px
+		left: 82px
+		font-size: 20px
+	&__item_investor
+		width: 213px
+		height: 213px
+		font-size: 28px
+		bottom: 0
+		right: 178px
+	&__content
+		position: relative
+		margin: auto
+		width: 943px
+		height: 1020px
+	&__item-title
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		margin: 0
+		white-space: nowrap
+	&__modal
+		position: absolute
+		z-index: 5
+		background: $color-gray
+		border-radius: 50%
+		width: 456px
+		height: 456px
+		overflow: hidden
+		background-position: 50% 50%
+		background-size: cover
+		background-repeat: no-repeat
+		&:before
+			content: ''
+			position: absolute
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			top: 0
+			left: 0
+			background: rgba( $color-black, .4 )
+	&__modal_relative
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		top: 50%
+		transform: translateY(-50%)
+	&__modal_title
+		font-family: 'CoreSansG', sans-serif
+		font-style: italic
+		font-size: 32px
+		text-align: left
+		line-height: 70px
+		display: block
+		width: 320px
+	&__modal_paragraph
+		font-family: 'CoreSansG', sans-serif
+		font-size: 14px
+		font-weight: 100
+		line-height: 18px
+		font-style: normal
+		display: block
+		width: 320px
+	&__modal_model
+		width: 533px
+		height: 533px
+		left: -145px
+		top: -117px
+		background-image: url('../img/stock-photo-the-sexy-strict-woman-with-makeup-and-a-fashionable-hairstyle-poses-in-studio-on-black-background-383138737@1X.png')
+		//display: none
+	&__modal_buer
+		background-image: url('../img/modal-bg-buer.jpg')
+		left: -100px
+		top: -100px
+		display: none
+	&__modal_fashion-maker
+		background-image: url('../img/modal-bg-fashion-maker.jpg')
+		top: -60px
+		left: -100px
+		display: none
+	&__modal_agent
+		background-image: url('../img/modal-bg-agent.jpg')
+		top: -100px
+		left: -100px
+		display: none
+	&__modal_miner
+		background-image: url('../img/modal-bg-miner.jpg')
+		top: -100px
+		left: -100px
+		display: none
+	&__modal_investor
+		background-image: url('../img/modal-bg-investor.jpg')
+		top: -163px
+		left: -43px
+		display: none
+
+.functional-modules
+	position: relative
+	background: $color-black
+	min-height: 500px
+	&__white-bg_top
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 30px
+		background: $color-white
+	&__white-bg_bottom
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 56px
+		background: $color-white
+	&__container
+		position: relative
+		display: flex
+	&__big-letter_title
+		width: 164px
+		height: 166px
+		color: $color-white
+		background: $color-red
+		font-family: 'BigCaslon', sans-serif
+		text-align: center
+		font-size: 120px
+		line-height: 185px
+	&__section-title
+		color: $color-white
+		line-height: 45px
+		font-size: 33px
+		letter-spacing: 1px
+		padding-top: 25px
+	&__content
+		padding-top: 60px
+		margin-left: 30px
+	&__desc
+		margin-top: 58px
+		color: $color-white
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 100
+		font-size: 18px
+	&__modules
+		width: 810px
+		display: flex
+		flex-wrap: wrap
+		position: relative
+		margin-top: 46px
+	&__modules_item
+		position: relative
+		width: 181px
+		height: 171px
+		background: $color-blue
+		margin-left: 28px
+		margin-top: 28px
+		padding: 13px
+		//transform: translate3d(0, 0, 10px)
+		&:first-child, &:nth-child(5), &:nth-child(9)
+			margin-left: 0
+	&__paragraph
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 100
+		font-size: 14px
+		color: $color-white
+		line-height: 16px
+		margin-top: 22px
+		height: 32px
+	&__open-btn
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 100
+		font-size: 13px
+		color: $color-white
+		display: block
+		width: 80px
+		height: 29px
+		background: none
+		border: 1px solid $color-white
+		border-radius: 10px
+		line-height: 29px
+		transition: background-color .3s ease-in-out, color .3s ease-in-out
+		&:hover, &:focus, &:active
+			background-color: $color-white
+			color: $color-blue
+			outline: none
+	&__icon
+		max-height: 47px
+	&__modal
+		position: absolute
+		width: 181px
+		height: 171px
+		background-color: $color-blue
+		z-index: -1
+		opacity: 0
+		transition: width .3s ease-in-out .5s, height .3s ease-in-out .5s, z-index .1s ease-in-out .8s, opacity .3s ease-in-out .5s
+		&_active
+			z-index: 5
+			width: calc( 181px * 2 + 28px )
+			height: calc( 171px * 2 + 28px )
+			opacity: 1
+			transition: width .3s ease-in-out, height .3s ease-in-out, opacity .3s ease-in-out
+			.functional-modules__modal_icon
+				opacity: 1
+				transition: opacity .5s ease-in-out .3s
+			.functional-modules__modal_paragraph
+				opacity: 1
+				transition: opacity .5s ease-in-out .4s
+			.functional-modules__modal_close-btn
+				opacity: 1
+				transition: opacity .5s ease-in-out .5s
+	&__modal_bottom-right
+		top: 0
+		left: 0
+	&__modal_bottom-left
+		top: 0
+		right: 0
+	&__modal_top-right
+		bottom: 0
+		left: 0
+	&__modal_top-left
+		bottom: 0
+		right: 0
+	&__modal_relative
+		position: relative
+		padding: 29px 26px 13px 34px
+	&__modal_icon
+		opacity: 0
+		transition: opacity .5s ease-in-out .2s
+	&__modal_paragraph
+		font-family: 'CoreSansG'
+		font-size: 13px
+		font-weight: 100
+		color: $color-white
+		text-align: left
+		letter-spacing: 0.02em
+		line-height: 15px
+		margin-top: 22px
+		opacity: 0
+		transition: opacity .5s ease-in-out .1s
+	&__modal_close-btn
+		position: absolute
+		top: 329px
+		right: 16px
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 100
+		font-size: 13px
+		color: $color-white
+		display: block
+		width: 80px
+		height: 29px
+		background: none
+		border: 1px solid $color-white
+		border-radius: 10px
+		line-height: 29px
+		transition: background-color .3s ease-in-out, color .3s ease-in-out, opacity .5s ease-in-out
+		opacity: 0
+		&:hover, &:focus, &:active
+			background-color: $color-white
+			color: $color-blue
+			outline: none
+
+.roadmap
+	position: relative
+	&__container
+		position: relative
+	&__title-container
+		width: 164px
+		height: 166px
+		background: $color-red
+		position: relative
+	&__section-title
+		top: 68px
+		position: absolute
+		left: 95px
+		line-height: 45px
+		font-size: 33px
+		letter-spacing: 1px
+	&__map
+		position: relative
+		margin-top: 104px
+		margin-bottom: 190px
+	&__line
+		position: relative
+		margin-top: 258px
+		width: 100%
+		height: 2px
+		background: $color-red
+		&:first-child
+			margin-top: 0
+	&__top-line_event_wr
+		position: absolute
+		width: 736px
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		display: flex
+		justify-content: space-between
+	&__center-line_event_wr
+		position: absolute
+		width: 1004px
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		display: flex
+		justify-content: space-between
+	&__event
+		position: relative
+	&__event_circle
+		width: 12px
+		height: 12px
+		position: relative
+		background: $color-red
+		border-radius: 50%
+		&:after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 4px
+			height: 4px
+			background: $color-white
+			border-radius: 50%
+	&__top-line
+		&:after
+			content: ''
+			position: absolute
+			left: 0
+			top: 0
+			height: 2px
+			background: $color-white
+			width: calc( (100% - 736px)/2 - 38px )
+	&__event_content
+		position: absolute
+		bottom: 18px
+		width: 132px
+	&__event__content_desc
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 300
+		font-size: 10px
+	&__event_content_title
+		margin-bottom: 11px
+		line-height: 13px
+		color: $color-red
+		font-family: 'BigCaslon', sans-serif
+		font-size: 19px
+	&__event-bottom
+		.roadmap__event_content
+			top: 22px
+	&__bottom-line
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			width:	calc( (100% - 736px)/2 )
+			height: 3px
+			background: $color-white
+	&__subscribe-now
+		padding-bottom: 30px
+		h4
+			color: $color-black
+		.subscribe-row__subscribe
+			border-color: $color-black
+		.subscribe-row__platform
+			position: relative
+		.subscribe-row__platform_img
+			position: absolute
+			bottom: -173px
+			z-index: 5
+
+.tokenomika
+	position: relative
+	background: $color-black
+	min-height: 600px
+	background-image: url(../img/rokenomika-bg.png)
+	background-position: 640px 0
+	background-size: cover
+	background-repeat: no-repeat
+	&__white-bg_top
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 60px
+		background: $color-white
+	&__container
+		position: relative
+		padding: 240px 0
+		padding-bottom: 0
+		display: flex
+		justify-content: center
+	&__container2
+		position: relative
+		&:after
+			content: url(../img/icon-arrow-bottom-pink.svg)
+			position: absolute
+			top: 35px
+			width: 11px
+			height: 44px
+			z-index: 8
+			left: 25px
+	&__title
+		position: absolute
+		top: -25px
+		left: 20px
+		font-size: 35px
+		color: $color-red
+		line-height: 50px
+		z-index: 3
+	&__chart
+		position: relative
+		&:last-child
+			margin-left: 220px
+	&__chart_content
+		position: absolute
+		width: 177px
+		font-family: 'CoreSansG', sans-serif
+	&__chart_title
+		color: $color-red
+		font-size: 30px
+		line-height: 38px
+	&__chart__second-title
+		color: $color-red
+		font-size: 16px
+	&__chart_desc
+		color: $color-white
+		font-size: 12px
+		line-height: 16px
+		margin-top: 15px
+	&__first-chart
+		.tokenomika__chart_content
+			left: 287px
+			top: 40px
+			&:before
+				content: url('../img/tokenomika-ico.svg')
+				position: absolute
+				left: -44px
+				top: 10px
+				width: 30px
+				height: 30px
+	&__last-chart
+		.tokenomika__chart_content
+			bottom: -155px
+			right: -30px
+			&:after
+				content: ''
+				position: absolute
+				top: -40px
+				left: 10px
+				width: 1px
+				height: 26px
+				background: $color-red
+	&__chart_img_wr
+		position: relative
+	&__chart_title-in
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		margin: 0
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 100
+		font-size: 14px
+		color: $color-white
+
+.swiper-button-prevs
+	display: flex
+	color: $color-white
+	align-items: center
+	display: table
+	position: absolute
+	top: -5px
+	left: 0
+	transition: transform .3s ease-in-out
+	.swiper-icon
+		transform: rotate(180deg)
+	&:hover
+		transform: translateX(10px)
+//.swiper-btn-icon
+//	transform: translateX(10px)
+.swiper-button-nexts
+	display: flex
+	color: $color-white
+	align-items: center
+	display: table
+	position: absolute
+	top: -5px
+	right: 0
+	transition: transform .3s ease-in-out
+	&:hover
+		transform: translateX(-10px)
+.swiper-btn-icon
+	display: table-cell
+	vertical-align: center
+.swiper-btn-text
+	display: table-cell
+	vertical-align: center
+	padding-left: 5px
+	padding-right: 5px
+	font-size: 11px
+	font-family: 'CoreSansG', sans-serif
+.swiper-icon
+	width: 24px
+
+.problems
+	position: relative
+	padding-bottom: 150px
+	&__container
+		position: relative
+	&__black-part
+		position: absolute
+		top: 0
+		right: 0
+		width: 50%
+		height: 150px
+		background: $color-black
+	&__slider
+		overflow: hidden
+	&__swiper-slide
+		height: 610px
+		background: $color-gray-dark
+		position: relative
+	&__swipe-item-bg
+		width: 100%
+		height: 100%
+		position: absolute
+		background-size: cover
+		top: 0
+		left: 0
+		opacity: 0.2
+		transition: opacity .3s ease-in-out, transform .3s ease-in-out
+		&:hover
+			cursor: pointer
+	&__swipe-item-bg_corruption
+		background-image: url('../img/fragmentation-bg.jpg')
+		background-position: 324px 0
+	&__swipe-item-bg_seive
+		background-image: url('../img/seive-bg.jpg')
+		background-position: -163px 0
+	&__swipe-item-bg_poor
+		background-image: url('../img/poor-bg.jpg')
+		background-position: -163px 0
+	&__swipe-item_text
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 30px
+	&__swipe-item_paragraph
+		color: $color-white
+		font-size: 26px
+		line-height: 35px
+		font-family: 'BigCaslon', sans-serif
+		font-weight: 300
+		opacity: 0.3
+		transition: opacity 0.3s ease-in-out
+	&__swipe-item_icon-svg
+		width: 70px
+	&__swipe-item_icon
+		position: absolute
+		left: 30px
+		bottom: 70px
+		opacity: 0.3
+		transition: opacity .3s ease-in-out, transform 0.3s ease-in-out
+	&__swiper-btns_nav
+		background: none
+		z-index: 8
+		top: 550px
+		margin-left: 30px
+		margin-right: 30px
+		&:hover
+			cursor: pointer
+		&:focus, &:active
+			outline: none
+	&__swiper-btn_prev
+		.swiper-icon
+			transform: rotate(180deg)
+	.swiper-slide
+		overflow: hidden
+		&:hover
+			.problems__swipe-item-bg
+				opacity: 0.4
+				transform: scale(1.2)
+				cursor: pointer
+			.problems__swipe-item_paragraph
+				opacity: 1
+				cursor: pointer
+			.problems__swipe-item_text
+				cursor: pointer
+			.problems__swipe-item_icon
+				opacity: 1
+				transform: translateY(-110px)
+				cursor: pointer
+	&__swiper-slide_modal
+		position: absolute
+		left: 15px
+		bottom: 0
+		width: calc( 100% - 30px - 285px )
+		height: 100%
+		background: $color-red
+		z-index: 9
+		display: none
+	&__swiper-slide_modal_dark-bg
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: rgba( $color-black, .5 )
+	&__swiper-slide_modal_title
+		position: absolute
+		color: $color-white
+		font-family: 'BigCaslon', sans-serif
+		font-size: 26px
+		line-height: 35px
+		font-weight: 300
+		top: 50%
+		transform: translateY(-50%)
+		left: 39px
+	&__swiper-slide_modal_desc
+		position: absolute
+		top: 371px
+		left: 39px
+		width: 328px
+		font-family: 'CoreSansG'
+		font-size: 15px
+		color: rgba(255, 255, 255, 1)
+		text-align: left
+		letter-spacing: 0.04em
+		line-height: 23px
+		font-weight: 100
+	&__swiper-slide_modal_solution_block
+		position: absolute
+		left: 450px
+		bottom: 0
+		background-image: linear-gradient( 159deg, rgb(249,0,0) 0%, rgb(255,0,78) 100%)
+		width: 265px
+		height: 296px
+	&__swiper-slide_modal_solution_block_relative
+		position: relative
+		width: 100%
+		height: 100%
+		padding: 50px 5px 15px 25px
+	&__swiper-slide_modal_big-letter
+		width: 46px
+		height: 67px
+		float: left
+		margin-right: 5px
+	&__swiper-slide_modal_solution-title
+		font-size: 30px
+		font-weight: 500
+		color: rgba(255, 255, 255, 1)
+		text-align: left
+		letter-spacing: 0.04em
+		line-height: 32px
+		font-family: 'BigCaslon', sans-serif
+		transform: translate(0, -8px)
+		display: block
+	&__swiper-slide_modal_solution-desc
+		font-family: 'CoreSansG'
+		font-size: 15px
+		color: rgba(255, 255, 255, 1)
+		text-align: left
+		letter-spacing: 0.04em
+		line-height: 23px
+		font-weight: 100
+		margin: 0
+	&__swiper-slide_modal_close
+		position: absolute
+		bottom: 40px
+		right: 40px
+		width: 70px
+		height: 70px
+		border-radius: 50%
+		border: 1px solid $color-white
+		transition: .3s ease-in-out
+		&:before
+			content: ''
+			position: absolute
+			top: 17px
+			left: 34px
+			width: 2px
+			height: 36px
+			background: $color-white
+			transform: rotate(45deg)
+		&:after
+			content: ''
+			position: absolute
+			top: 17px
+			left: 34px
+			width: 2px
+			height: 36px
+			background: $color-white
+			transform: rotate(-45deg)
+		&:hover
+			background: $color-gray-light
+			cursor: pointer
+			&:before, &:after
+				background: $color-pink
+// PopUp`s
+#corruption-popup
+	background-image: url(../img/fragmentation-bg.jpg)
+	background-position: 0 0
+	background-size: cover
+#silver-popup
+	background-image: url(../img/seive-bg.jpg)
+	background-position: 0 0
+	background-size: cover
+#poor-popup
+	background-image: url(../img/poor-bg.jpg)
+	background-position: 0 0
+	background-size: cover
+
+.team
+	position: relative
+	padding-top: 70px
+	&__container
+		position: relative
+	&__bg_black_top
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		background: $color-black
+		height: 210px
+		z-index: -1
+	&__bg_white_top-left
+		position: absolute
+		top: 175px
+		left: -4763px
+		height: 40px
+		background: $color-white
+		width: 5000px
+	&__section-title
+		color: $color-white
+		line-height: 45px
+		font-size: 33px
+		letter-spacing: 1px
+		margin-bottom: 60px
+	&__image_wr
+		width: 264px
+		height: 320px
+		overflow: hidden
+		position: relative
+	&__image
+		position: absolute
+		left: 50%
+		transform: translateX(-50%)
+	&__content
+		display: flex
+	&__content_side
+		flex-basis: 50%
+	&__content_right
+		margin-top: 130px
+	&__item
+		position: relative
+		margin-bottom: 191px
+	&__item_content
+		position: absolute
+		top: 280px
+		left: 79px
+	&__name
+		font-family: 'BigCaslon', sans-serif
+		font-size: 41px
+		color: $color-black
+	&__desc
+		width: 231px
+		font-family: 'CoreSansG', sans-serif
+		font-size: 20px
+		color: $color-black
+		margin-top: 15px
+		line-height: 28px
+
+.news
+	position: relative
+	background: $color-black
+	padding-top: 70px
+	//overflow-x: hidden
+	&__section-title
+		color: $color-red
+		line-height: 45px
+		font-size: 33px
+		letter-spacing: 1px
+		span
+			color: $color-white
+	&__slider
+		margin-top: 60px
+		margin-bottom: 202px
+		color: $color-white
+		.swiper-slide
+			text-align: center
+		&:after
+			content: ''
+			position: absolute
+			left: calc( 100% - 30px )
+			width: 1000px
+			height: 700px
+			top: 0
+			background: rgba( $color-black, .6 )
+			z-index: 3
+	&__container
+		position: relative
+	&__btn_red
+		width: 194px
+		height: 50px
+		padding: 14px 0
+		font-size: 14px
+		margin: auto
+		margin-top: 24px
+		&:hover, &:active, &:focus
+			text-decoration: none
+			color: $color-white
+	&__slider_img_wr
+		width: 197px
+		height: 197px
+		overflow: hidden
+		position: relative
+		margin: auto
+		margin-bottom: 24px
+	&__slider_title
+		font-family: 'BigCaslon', sans-serif
+		font-size: 22px
+	&__slider_desc
+		margin-top: 28px
+		font-family: 'CoreSansG', sans-serif
+	&__swiper-btns_nav
+		position: absolute
+		top: 60px
+		margin-right: 30px
+		margin-left: 20px
+		&:focus, &:active
+			outline: none
+	&__swiper-slide
+		width: 197px
+
+.contact
+	position: relative
+	background: $color-black
+	padding-top: 150px
+	padding-bottom: 200px
+	color: $color-white
+	&__container
+		position: relative
+	&__section-title
+		line-height: 45px
+		font-size: 33px
+		letter-spacing: 1px
+	&__content
+		display: flex
+		margin-top: 83px
+		font-family: 'CoreSansG'
+		font-size: 18px
+		font-weight: 100
+		text-align: left
+		letter-spacing: 0.04em
+		line-height: 40px
+		width: 100%
+		position: relative
+		justify-content: space-between
+		color: rgba( $color-white, .9 )
+	&__phone-address
+		flex-basis: 50%
+	&__address
+		margin-top: 86px
+	&__mail
+		flex-basis: 50%
+	&__map
+		width: 100%
+		position: relative
+		margin-top: 200px
+	&__map_wr
+		position: relative
+		width: 992px
+		margin: auto
+.dot
+	position: absolute
+	z-index: 6
+	&:before
+		content: ' '
+		position: absolute
+		z-index: 2
+		left: 0
+		top: 0
+		width: 10px
+		height: 10px
+		border-radius: 50%
+	&:after
+		content: ' '
+		position: absolute
+		z-index: 1
+		width: 10px
+		height: 10px
+		border-radius: 50%
+		box-shadow: 0 0 10px rgba(0,0,0,.3) inset
+		animation-name: 'ripple'
+		animation-duration: 1s
+		animation-timing-function: ease
+		animation-delay: 0s
+		animation-iteration-count: infinite
+		animation-direction: normal
+	&__info
+		position: absolute
+		left: 70px
+		top: -70px
+		width: 250px
+		display: none
+		&:before
+			content: ''
+			position: absolute
+			left: -30px
+			top: 22px
+			width: 1px
+			height: 59px
+			background: $color-white
+			transform: rotate(55deg)
+		&:after
+			content: ''
+			position: absolute
+			left: -6px
+			top: 34px
+			height: 1px
+			width: 150px
+			background: $color-white
+	&__info_title
+		font-size: 22px
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 100
+		letter-spacing: 2px
+		margin-top: -5px
+	&__info_desc
+		font-size: 12px
+		font-family: 'CoreSansG', sans-serif
+		font-weight: 100
+		letter-spacing: 1px
+		line-height: 16px
+		margin-top: 15px
+	&:hover
+		cursor: pointer
+		&:before
+			transform: scale(1.5)
+		&:after
+			animation: none
+	&__russia
+		position: absolute
+		top: 346px
+		right: 333px
+		&:before
+			background-color: #FFB000
+		&:after
+			background-color: #FFB000
+		&:hover
+			.dot__info
+				display: block
+
+@keyframes ripple
+	0%
+		left: 5px
+		top: 5px
+		opcity: 75
+		width: 0
+		height: 0
+	100%
+		left: -20px
+		top: -20px
+		opacity: 0
+		width: 50px
+		height: 50px
+
+@import "header"
+@import "menu"
+@import "switch-language"
+@import "subscribe-row"
+@import "media" // Всегда в конце
